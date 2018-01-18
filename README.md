@@ -2,7 +2,7 @@
 
 [1] https://www.youtube.com/watch?v=BXRnc4o2o6E
 
-## Two-Factor Authentication
+## Multi-Factor Authentication
   
 SMS:  
 Social engineering.  
