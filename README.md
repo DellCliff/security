@@ -1,6 +1,6 @@
 # Security
 
-https://www.youtube.com/watch?v=BXRnc4o2o6E [1]
+[1] https://www.youtube.com/watch?v=BXRnc4o2o6E
 
 ## Two-Factor Authentication
   
