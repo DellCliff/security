@@ -1,6 +1,7 @@
 # Security
 
-[1] https://www.youtube.com/watch?v=BXRnc4o2o6E
+[1] https://www.youtube.com/watch?v=BXRnc4o2o6E  
+https://thumbsroll.blogspot.co.at/2018/01/oneplus-confirms-up-to-40000-customers.html  
 
 ## Multi-Factor Authentication
   
