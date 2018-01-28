@@ -25,5 +25,5 @@ https://hackernoon.com/part-2-how-to-stop-me-harvesting-credit-card-numbers-and-
 Malicious JavaScript code running on your website from some NPM package.  
 -> Render sensitive information and user forms in static HTML without using any JavaScript and display it in a secure iframe on your website. Zero JavaScript goodness! Also crank your Content-Security-Policy way up!
 
-Credit card number theft:  
+Credit card number theft through XSS:  
 https://forums.oneplus.net/threads/jan-19-update-an-update-on-credit-card-security.752415/  
