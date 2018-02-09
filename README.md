@@ -30,3 +30,6 @@ report-uri
 
 Credit card number theft through XSS:  
 https://forums.oneplus.net/threads/jan-19-update-an-update-on-credit-card-security.752415/  
+
+Once deleted usernames should be banned from being used/created again.  
+https://donatstudios.com/GithubsTotalSecurityFacepalm
