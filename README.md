@@ -3,6 +3,7 @@
 [1] https://www.youtube.com/watch?v=BXRnc4o2o6E  
 https://thumbsroll.blogspot.co.at/2018/01/oneplus-confirms-up-to-40000-customers.html  
 https://www.youtube.com/watch?v=YrqyfV8rgmI  
+https://infosec.mozilla.org/guidelines/web_security  
 
 ## Multi-Factor Authentication
   
