@@ -5,6 +5,7 @@ https://thumbsroll.blogspot.co.at/2018/01/oneplus-confirms-up-to-40000-customers
 https://www.youtube.com/watch?v=YrqyfV8rgmI  
 https://infosec.mozilla.org/guidelines/web_security  
 https://crackstation.net/hashing-security.htm  
+Research topic: Keyed Hashes  
 
 Certificate Pinning:  
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Public_Key_Pinning  
