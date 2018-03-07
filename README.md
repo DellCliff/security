@@ -85,15 +85,12 @@ Content-Security-Policy
 
 ## CSRF
 1. Same Origin Checks
-    1. Source Origin Checks
-        * Origin Header Check
-        * Referer Header Check
-        >Both of these headers can be spoofed of course, although not by JS (XSS attacks) since they are on the forbidden headers list, and can only be set by the browser itself.
-    2. Target Origin Checks
-        * Predefined value
-        * Host Header Check
-        * X-Forwarded-Host Header Check
-    3. Compare Source Origin with Target Origin
+    ```
+    Source = Origin Header || Referer Header;
+    Target = Predefined Value || X-Forwarded-Host Header || Host Header;
+    Same Origin = Source == Target;
+    ```
+    Headers can be spoofed of course, although not by JS (XSS attacks) since they are on the forbidden headers list (not true for X-Forwarded-Host), and can only be set by the browser itself.
 2. CSRF-Token
     * Unique per user session
     * Large random value
