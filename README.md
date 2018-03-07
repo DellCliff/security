@@ -1,6 +1,5 @@
 # Security
 
-[1] https://www.youtube.com/watch?v=BXRnc4o2o6E  
 https://www.youtube.com/watch?v=YrqyfV8rgmI  
 https://infosec.mozilla.org/guidelines/web_security  
 
@@ -21,19 +20,20 @@ https://crackstation.net/hashing-security.htm
 
 Certificate Pinning:  
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Public_Key_Pinning  
+>Difficult to get right and high risk to screw up.
 
 ## Multi-Factor Authentication
-  
-SMS:  
-Social engineering.  
-Someone calling the help-desk or PHONE COMPANY saying they lost their phone and register new phone number.  
-Two-factor SMS gets sent to the new phone number -> hacked!
-[1] 27:30
 
-Applications:  
-Duo, Authy, HDE OTP, Google Authenticator  
-Better than SMS, as it is locked to the phone and not a phone number. [1] 28:00  
-TODO: Research those application  
+[1] https://www.youtube.com/watch?v=BXRnc4o2o6E  
+>SMS:  
+>Social engineering.  
+>Someone calling the help-desk or PHONE COMPANY saying they lost their phone and register new phone number.  
+>Two-factor SMS gets sent to the new phone number -> hacked! [1] 27:30
+
+>Applications:  
+>Duo, Authy, HDE OTP, Google Authenticator  
+>Better than SMS, as it is locked to the phone and not a phone number. [1] 28:00  
+>TODO: Research those application  
 
 ## Very insightful
 
@@ -58,3 +58,22 @@ https://www.b-list.org/weblog/2018/feb/11/usernames/
 https://github.com/maxchehab/CSS-Keylogging  
 https://jakearchibald.com/2018/third-party-css-is-not-safe/  
 >CSS Keylogger. Don't trust external or third-party CSS for sensitive information.  
+
+## HTTP-Headers
+Referrer-Policy: no-referrer  
+>The Referer header will be omitted entirely. No referrer information is sent along with requests.  
+
+Strict-Transport-Security: max-age=63072000; includeSubDomains  
+>HSTS. The first time your site is accessed using HTTPS and it returns the Strict-Transport-Security header, the browser records this information, so that future attempts to load the site using HTTP will automatically use HTTPS instead.  
+
+X-Content-Type-Options: nosniff  
+>This header was introduced by Microsoft in IE 8 as a way for webmasters to block content sniffing that was happening and could transform non-executable MIME types into executable MIME types. Since then, other browsers have introduced it, even if their MIME sniffing algorithms were less aggressive.  
+
+X-Frame-Options: deny  
+>The X-Frame-Options HTTP response header can be used to indicate whether or not a browser should be allowed to render a page in a <frame\>, <iframe\> or <object\> . Sites can use this to avoid clickjacking attacks, by ensuring that their content is not embedded into other sites.  
+
+X-Permitted-Cross-Domain-Policies: none  
+>A cross-domain policy file is an XML document that grants a web client, such as Adobe Flash Player or Adobe Acrobat (though not necessarily limited to these), permission to handle data across domains. When clients request content hosted on a particular source domain and that content make requests directed towards a domain other than its own, the remote domain needs to host a cross-domain policy file that grants access to the source domain, allowing the client to continue the transaction. Normally a meta-policy is declared in the master policy file, but for those who can’t write to the root directory, they can also declare a meta-policy using the X-Permitted-Cross-Domain-Policies HTTP response header.  
+
+X-XSS-Protection: 1; mode=block  
+>X-XSS-Protection is a feature of Internet Explorer and Chrome that stops pages from loading when they detect reflected cross-site scripting (XSS) attacks. Although these protections are largely unnecessary in modern browsers when sites implement a strong Content Security Policy that disables the use of inline JavaScript ('unsafe-inline'), they can still provide protections for users of older web browsers that don’t yet support CSP.
